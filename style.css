@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    display: grid;
+    grid-template-areas: 
+    "nv  hd hd" 
+    "nv  mn mn" 
+    "nv  ft ft";
+   grid-template-columns: 241px 1fr 1fr;
+   grid-template-rows: 70px auto 490px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: black;   
+    grid-area: hd;
+    padding: 16px 32px;
+    display: flex;
+}
+
+.arrows {
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #a7a7a7;
+    margin: 0 16px;
+    padding: 8px 0;
+}
+
+.nav-bar {
+    padding-left: 430px;
+    padding-top: 5px;
+}
+
+.nav-bar__reg {
+    padding-left: 90px;
+    padding-top: 5px;
+}
+
+.iniciar-ses {
+    padding-top: 5px;
+    padding-left: 45px;
+    border: solid 0.5px white;
+    border-radius: 20px;
+    background-color: white;
+    padding: 8.5px;
+}
+
+.log {
+    color: black;
+}
+
+.main {
+    background-color: #131313;
+    grid-area: mn;
+    color: white;
+}
+
+.main-1 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-2 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.ver-todo { 
+    color: #a7a7a7;
+    padding-top: 8px;
+}
+
+.tendencias {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.listas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    left: 100px;
+    padding-top: 50px;
+}
+
+.card {
+    height: 235px;
+    width: 180px;
+}
+
+.artistas {
+    display: flex;
+    justify-content: center ;
+    font-weight: bolder;
+}
+
+.songs {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-cancion {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    grid-area: nv;
+}
+
+.nav-title {
+    display: flex;
+    margin: 24px;
+}
+
+.nav-title:hover {
+    color: #1db954;
+}
+
+.title-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 0 18px;
+    padding: 0 24px;
+}
+
+.nav-title__spot {
+    margin-left: 7px;
+    font-size: 24px;
+    padding-top: 6px;
+}
+
+.nav-bottom {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+
+.nav-bottom__text {
+    padding-top: 450px;
+}
+
+.list {
+    color: #a7a7a7;
+    margin-top: 10px;
+    font-size: 70%;
+}
+
+.inicio {
+    padding: 0 16px;
+    display: flex;
+}
+
+.home {
+    font-size: 0.875rem;
+    margin: 7px 0 0 20px;
+}
+
+#registered {
+    font-size: 9px;
+    display: inline;
+}
+
+.playlist {
+    margin-top: 24px;
+}
+
+.likes {
+    background-color: lightblue;
+}
+
+.footer {
+    background-color: #131313;
+    grid-area: ft;
+    padding-top: 30px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.foot-cols {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.foot-col__1 {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    margin: 30px;
+    height: 200px;
+}
+
+.foot-col__2 {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    margin: 30px;
+    height: 200px;
+}
+
+.foot-titles {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.foot-texts {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+.foot-social {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 100px;
+}
+
+.social {
+    gap: 10px;
+}
+
+hr {
+    margin: 0 50px;
+    color: #a7a7a7
+}
+
+.foot-2 {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    color: #a7a7a7;
+    font-size: 90%;
+}
+
+.foot-final {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.foot-final__2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 90%;
+}
+
+
+@media (max-width:768px) {
+    .header, .nav, .iniciar-ses, .nav-bar, .nav-bar__reg, .nav-bottom, .nav-bottom__text, .nav-link, .nav-title, .nav-title__spot,.inicio ,.link-cancion, .log {
+        width: 100%;
+    }
+
+    .header, .nav-bar  {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: 100%;
+    }
+
+    .nav-bar__reg, .nav-link {
+        display: grid;
+        grid-template-columns: 1;
+    }
+
+    .arrows {
+        width: 100%;
+    }
+    
+    .tendencias, .listas {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .listas {
+        position: relative;
+        left: 10px;
+        width: 100%;
+    }
+
+    .artistas {
+        padding: 10px 0;
+    }
+    .columns, .foot-final, .foot-final__2, .foot-social,.foot-col__1, .foot-col__2, .foot-texts, .foot-titles, .footer,.foot-2 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .foot-cols {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: 100%;
+    }
+    .columns, .nav {
+        height: 100%;
+    }
+    .main,.card ,.tendencias, .listas, .songs, .ver-todo {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    div {
+        width: 100%;
+    }
+}
